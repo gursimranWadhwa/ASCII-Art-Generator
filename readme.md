@@ -28,7 +28,6 @@ There are two output formats for each type:
 
 
 ## <a name="screenshots"></a>OUTPUT SCREENSHOTS
-<img src="./readme/00.jpeg" >
 <img src="./readme/11.jpeg">
 <img src="./readme/22.jpeg">
 <img src="./readme/33.jpeg">
