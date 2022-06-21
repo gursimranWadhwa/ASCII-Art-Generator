@@ -12,8 +12,8 @@ Python Programs for:
 2. Converting Videos to ASCII art by dividing it into picture frames and then recompiling it back to video.
 
 There are two output formats for each type:
-1. Black and White Image
-2. Coloured Image
+1. Black and White
+2. Coloured 
 
 ## <a name="localSetup"></a>Run project locally 
  * Create a fork and clone the fork to your local system:  git clone https://github.com/gursimranWadhwa/ascii-art-generator.git 
@@ -35,4 +35,4 @@ There are two output formats for each type:
 * <a href="https://en.wikipedia.org/wiki/ASCII_art#Types_and_styles">Wikipedia</a>
 * <a href="https://alekya3.medium.com/how-images-are-stored-in-a-computer-f364d11b4e93">Medium</a>
 * <a href="https://www.analyticsvidhya.com/blog/2021/03/grayscale-and-rgb-format-for-storing-images/">Analytics Vidhya</a>
-* <a href="https://hackmd.io/@xenorivai/H12U8cwv5">hackmd.io</a>
+* <a href="https://www.geeksforgeeks.org/extract-images-from-video-in-python/">Geeks For Geeks</a>
