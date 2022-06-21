@@ -24,7 +24,7 @@ def main():
   if path == '':
     path = '.\images\input6.jpg'      #default path
 
-  bg = 'black'
+  bg = 'white'
   if bg == 'white':
     bg_code = (255, 255, 255)
   elif bg == 'black':
