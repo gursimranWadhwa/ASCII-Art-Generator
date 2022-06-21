@@ -18,7 +18,7 @@ There are two output formats for each type:
 
 <a href = "https://drive.google.com/file/d/1T9hfReE6Yvq7wRyOvfGleK0Djk7vLDPg/view?usp=sharing">Link to Demo Video</a>
 
-## <a name="localSetup"></a>Run project locally 
+## <a name="localSetup"></a>RUNNING THE PROJECT
  * Create a fork and clone the fork to your local system: ``` git clone https://github.com/gursimranWadhwa/ascii-art-generator.git ```
  * Run : ``` cd ascii-art-generator/ ```
  * Install the missing dependencies(If any)
