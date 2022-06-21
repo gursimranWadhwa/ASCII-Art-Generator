@@ -29,7 +29,6 @@ There are two output formats for each type:
 #### "cv2"
 #### "numpy"
 #### "pillow"
-#### "argparse"
 
 ## <a name="references"></a>References
 * <a href="https://en.wikipedia.org/wiki/ASCII_art#Types_and_styles">Wikipedia</a>
