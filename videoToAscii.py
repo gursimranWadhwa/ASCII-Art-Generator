@@ -1,7 +1,3 @@
-import os
-import sys
-from time import time
-from tkinter import Frame
 import cv2 as cv
 import numpy as np
 from PIL import Image, ImageDraw, ImageOps, ImageFont
@@ -73,7 +69,7 @@ def main():
     res1 = res1.crop(partial_img)
     res1 = np.array(res1)
     cv.imshow("Frame", res1)
-    if cv.waitKey(10) & 0xFF == ord('q'):
+    if cv.waitKey(10) & 0xFF == ord('0'):
       break
     
   cam.release()

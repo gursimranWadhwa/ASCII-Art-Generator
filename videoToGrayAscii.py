@@ -1,7 +1,3 @@
-import os
-import sys
-from time import time
-from tkinter import Frame
 import cv2 as cv
 import numpy as np
 from PIL import Image, ImageDraw, ImageOps, ImageFont

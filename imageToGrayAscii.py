@@ -1,8 +1,6 @@
 import cv2 as cv
 import numpy as np
-from cv2 import waitKey
 from PIL import Image, ImageDraw, ImageOps, ImageFont
-from pkgutil import get_data
 
 char_set = {
   "standard": "@%#*+=-:. ",

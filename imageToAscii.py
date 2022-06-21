@@ -1,9 +1,7 @@
 import cv2 as cv
 from cv2 import COLOR_BGR2RGB
 import numpy as np
-from cv2 import waitKey
 from PIL import Image, ImageDraw, ImageOps, ImageFont
-from pkgutil import get_data
 
 char_set = {
   "standard": "@%#*+=-:. ",
@@ -11,8 +9,7 @@ char_set = {
 }
 
 def get_data(mode):
-  # font = ImageFont.truetype("fonts\DejaVuSansMono.ttf", size = 10)
-  font = ImageFont.truetype("fonts\CourierPrime-Regular.ttf", size = 10)
+  font = ImageFont.truetype("fonts\DejaVuSansMono.ttf", size = 10)
   scale = 1
   char_list = char_set[mode]
   return char_list, font, scale
