@@ -14,7 +14,7 @@ Python Programs for:
 
 There are two output formats for each type:
 1. Black and White
-2. Coloured 
+2. Coloured <br>
 <a href = "https://drive.google.com/file/d/1T9hfReE6Yvq7wRyOvfGleK0Djk7vLDPg/view?usp=sharing">Link to Demo Video</a>
 
 ## <a name="localSetup"></a>Run project locally 
