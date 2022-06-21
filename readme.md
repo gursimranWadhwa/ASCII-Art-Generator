@@ -5,6 +5,7 @@ The project aims at generating both black & white and colored Ascii Arts from im
   * [Run Project Locally](#localSetup)
   * [Output Screenshots](#screenshots)
   * [Dependencies](#depend)
+  * [Additional Tasks](#tasks)
   * [References](#references)
 
 ## <a name="introduction"></a>INTRODUCTION
@@ -39,6 +40,10 @@ There are two output formats for each type:
 #### "cv2"
 #### "numpy"
 #### "pillow"
+
+## <a name="tasks"></a>ADDITIONALS
+* Asciified the Videos by extracting frames of input video.
+* Both Black & White and Colored Ascii Arts for the videos are produced.
 
 ## <a name="references"></a>REFERENCES
 * <a href="https://en.wikipedia.org/wiki/ASCII_art#Types_and_styles">Wikipedia</a>
