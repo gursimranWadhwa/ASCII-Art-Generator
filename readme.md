@@ -27,13 +27,13 @@ There are two output formats for each type:
 
 
 ## <a name="screenshots"></a>OUTPUT SCREENSHOTS
-<img src="./readme/1.png" width="400">
-<img src="./readme/7.png" width="400">
-<img src="./readme/2.png" width="400">
-<img src="./readme/3.png" width="400">
-<img src="./readme/4.png" width="400">
-<img src="./readme/5.png" width="400">
-<img src="./readme/6.png" width="400">
+<img src="./readme/00.jpeg" >
+<img src="./readme/11.jpeg">
+<img src="./readme/22.jpeg">
+<img src="./readme/33.jpeg">
+<img src="./readme/44.jpeg">
+<img src="./readme/55.jpeg">
+<img src="./readme/66.jpeg">
 
 ## <a name="depend"></a>DEPENDENCIES
 #### "cv2"
