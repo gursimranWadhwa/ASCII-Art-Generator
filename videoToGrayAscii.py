@@ -1,9 +1,18 @@
-from ast import arg
+import imp
+import sys
+from time import time
+from tkinter import Frame
+from typing import overload
 import cv2 as cv
 import numpy as np
 import argparse
+# import time
+# import sys
+# import os
+# import json
+# import random
 from PIL import Image, ImageDraw, ImageOps, ImageFont
-from pkgutil import get_data
+# from pkgutil import get_data
 
 char_set = {
   "standard": "@%#*+=-:. ",
@@ -16,11 +25,30 @@ def get_data(mode):
   char_list = char_set[mode]
   return char_list, font, scale
 
-def arguments():
-  parser = argparse.ArgumentParser("")
-  parser.add_argument("--fps", type=int, default=0, help="frames per second")
-  parser.add_argument("--input", type=str, default="vidoes/input2.mp4", help="Input video")
-  parser.add_argument("--output", type=str, default="videos/output.mp4", help="Ouput video")
+# def get_frames(frame):
+#   image = cv.cvtColor(frame, cv.COLOR_BGR2RGB)
+#   out = Image.fromarray(image)
+#   return out
+
+# def take_input(cap, resolution):
+#   set_of_frames = []
+#   duration = int(cap.get(cv.CAP_PROP_FRAME_COUNT))
+#   it = 0
+#   while (True):
+#     it += 1
+#     ret, frame = cap.read()
+#     if ret:
+#       curr_frame = get_frames(frame)
+#       resized = 
+
+
+def create_object():
+  parser = argparse.ArgumentParser()
+  parser.add_argument("--input", type=str, default="videos/input.mp4", help="Input video")
+  parser.add_argument("--output", type=str, default="videos/output.mp4", help="Output video")
+  parser.add_argument("--col", type=int, default=100, help="Characters count in output width")
+  parser.add_argument("--fps", type=int, default=0, help="Number of frames per second")
+  parser.add_argument("--overlay_ratio", type=float, default=0.2, help="Overlay width ratio")
   args = parser.parse_args()
   return args
 
@@ -33,16 +61,16 @@ def main(object):
 
   char_list, font, scale = get_data("complex")
   char_count = len(char_list)
-  col = 300
+  col = object.col
 
-  frames = cv.VideoCapture(object.input)
+  cap = cv.VideoCapture(object.input)
   if object.fps == 0:
-    fps = int(frames.get(cv.CAP_PROP_FPS))
+    fps = int(cap.get(cv.CAP_PROP_FPS))
   else:
     fps = object.fps
 
-  while frames.isOpened():
-    flag, frame = frames.read()
+  while cap.isOpened():
+    flag, frame = cap.read()
     if flag:
       gray_img = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
     else:
@@ -83,11 +111,17 @@ def main(object):
     try:
       out
     except:
-      out = cv.VideoWriter(object.output, cv.VideoWriter_fourcc(*"XVID"), object.fps, ((res1.shape[1], res1.shape[0])))
+      out = cv.VideoWriter(object.output, cv.VideoWriter_fourcc(*'MP4V4'), fps, ((res1.shape[1], res1.shape[0])))
     
-    frames.release()
+    cap.release()
     out.release()
 
+def display(set_of_frames, fps):
+  while (True):
+    for i in set_of_frames:
+      sys.stdout.write(i)
+      time.sleep(1 / fps)
+
 if __name__ == '__main__':
-  object = arguments()
+  object = create_object()
   main(object)
