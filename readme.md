@@ -4,6 +4,7 @@ The project aims at generating both black & white and colored Ascii Arts from im
   * [Introduction](#introduction)
   * [Run Project Locally](#localSetup)
   * [Output Screenshots](#screenshots)
+  * [Basic Functions](#cmnd)
   * [Dependencies](#depend)
   * [Additional Tasks](#tasks)
   * [References](#references)
@@ -34,6 +35,16 @@ There are two output formats for each type:
 <img src="./readme/44.jpeg">
 <img src="./readme/55.jpeg">
 <img src="./readme/66.jpeg">
+
+## <a name="cmnd"></a>BASIC FUNCTIONS
+* numpy.mean(array, axis): returns mean of the values of array.
+* String.join() : Is similar to ‘+’ operator and helps in joining two strings.
+* draw.text(xy, text, fill, font): Used to draw string at a given position ‘xy’. We can also set font and color of the text using ‘fill’ and ‘font’ parameters respectively.
+* image.getbbox(): Calculates the bounding box of the non-zero region in the
+Image or it crops the black borders in the image.
+* PIL.ImageDraw allows us to write texts to image. Initializing ImageDraw with
+output image.
+
 
 ## <a name="depend"></a>DEPENDENCIES
 #### "cv2"
